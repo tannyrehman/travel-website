@@ -1,0 +1,104 @@
+:root {
+    --primary-color: rgb(185, 183, 183);
+    --secondary-color: #df9739;
+    --text-color: rgb(141, 136, 136);
+    --black-color: rgb(67, 62, 62);
+    --green-color-:rgb(19, 59, 19);
+    --light-green: rgb(87, 191, 87);
+}
+.trip-left img {
+    border-radius: 20px;
+}
+.trip-left h2,
+.trip-left h3,
+.trip-left h5 {
+    font-weight: 900;
+}
+.trip-left p {
+    font-size: 22px;
+    color: var(--text-color);
+    margin-top: 15px;
+}
+.trip-left span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--green-color-);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trip-left span i {
+    color: #fff;
+    font-size: 12px;
+}
+.trip-right h4 {
+    font-weight: 900;
+}
+.search-area {
+    background-color: rgb(239, 244, 243);
+    padding: 35px 30px 40px;
+    border-radius: 20px;
+}
+.search-area input {
+    background-color: #fff;
+    border: none;
+    padding: 15px 30px;
+}
+.search-area span {
+    background: var(--green-color-);
+    color: #fff;
+    padding: 15PX;
+    cursor: pointer;
+}
+.search-category {
+    background-color: rgb(239, 244, 243);
+    padding: 35px 30px 40px 40px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.category-info {
+    background: #fff;
+    padding: 15px  20px;
+    margin-top: 15px;
+    transition: all 0.5s ease;
+    border-radius: 8px;
+}
+.category-info.active {
+    background: var(--green-color-);
+}
+.category-info.active span,
+.category-info.active i {
+    color: #fff;
+}
+.category-info span {
+    margin-left: 15px;
+    font-size: 20px;
+    color: var(--text-color);
+}
+.category-info i {
+    font-size: 16px;
+    color: var(--text-color);
+}
+.category-info:hover {
+    background: var(--green-color-);
+    color: #fff;
+}
+.category-info:hover span,
+.category-info:hover i {
+    color: #fff;
+}
+.category-tag {
+    background-color: rgb(239, 244, 243);
+    padding: 40px 30px 40px;
+    border-radius: 20px;
+    margin-top: 60px;
+}
+.category-tag a {
+    font-size: 16px;
+    color: var(--text-color);
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}

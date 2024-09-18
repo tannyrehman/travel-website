@@ -1,0 +1,96 @@
+
+:root {
+    --primary-color: rgb(185, 183, 183);
+    --secondary-color: #df9739;
+    --text-color: rgb(141, 136, 136);
+    --black-color: rgb(67, 62, 62);
+    --green-color-:rgb(19, 59, 19);
+    --light-green: rgb(87, 191, 87);
+}
+.trip-card {
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .trip-card img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+  }
+  .trip-card:hover img {
+    transform: scale(1.03); 
+    transition: all .4s ease-in-out;
+  }
+  .trip-content {
+    padding: 20px 30px 20px 40px;
+  }
+  .trip-icon span {
+    margin-left: 10px;
+    color: var(--text-color);
+  }
+  .trip-title {
+    margin: 13px 0 18px;
+  }
+  .trip-title a {
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    color: var(--black-color);
+  }
+  .trip-title a::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: .5px;
+    background-color: var(--black-color);
+    transition: all .6s ease;
+  }
+  .trip-title a:hover::before {
+    width: 100%;
+  }
+  .trip-star a {
+    color: rgb(17, 193, 17);
+  }
+  .trip-star span {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .trip-time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  .trip-time p {
+    color: var(--text-color);
+  }
+  .trip-time span {
+    color: black;
+    font-size: 23px;
+    margin-left: 8px;
+  }
+  .trip-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 15px;
+  }
+  .trip-bottom a {
+    font-size: 22px;
+    color: black;
+  }
+  .trip-bottom a i{
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  .trip-bottom p {
+    font-size: 22px;
+    color: var(--text-color);
+  }
+  .trip-bottom p span {
+    color: black;
+  }
+  
+  

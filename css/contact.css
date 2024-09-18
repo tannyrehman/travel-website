@@ -1,0 +1,105 @@
+
+  /* Contact Section */
+  .contact-form h3 {
+    font-weight: 900;
+  }
+  .divider {
+    width: 38%;
+    border: none;
+    border-bottom: 1px solid black;
+    margin:20px 0 30px;
+  }
+  .contact-form input {
+    padding: 22px 22px 22px 25px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: rgb(239, 244, 243);
+    margin-bottom: 25px; 
+    width: 50%; 
+  }
+  .contact-form input::placeholder {
+    font-size: 20px;
+  }
+  .contact-form input:focus {
+    outline: none;
+    border: 1px solid var(--green-color-);
+  }
+  .contact-form textarea {
+    padding: 22px;
+    border: none;
+    outline: none;
+    background-color: rgb(239, 244, 243);
+    border-radius: 30px;
+    height: 150px;
+    width: 100%;
+    resize: none;
+  }
+  .contact-form textarea::placeholder {
+    font-size: 20px;
+  }
+  .contact-form textarea:focus {
+    outline: none;
+    border: 1px solid var(--green-color-);
+  }
+  .send-meg {
+    background: var(--green-color-);
+    padding: 16px 30px;
+    border-radius: 30px;
+    transition: all 1s ease;
+    border: 1px solid transparent;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .send-meg:hover {
+    border: 1px solid var(--green-color-);
+    background: #fff;
+  }
+  .send-meg:hover{
+    color: var(--black-color);
+  }
+  .contact-info h3 {
+    font-weight: 900;
+  }
+  .contact-content {
+    display: flex;
+  }
+
+  .contact-content a {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green-color-);
+    border: 1px solid rgb(227, 220, 220);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    font-size: 22px;
+    margin-right: 25px;
+  }
+  .contact-content h5 {
+    color: var(--green-color-);
+    font-weight: 800;
+  }
+  .contact-content p {
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 6px;
+  }
+  /* Map */
+  .map {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .map iframe{
+    width: 85%;
+    border-radius: 20px;  
+    margin: 0 auto;
+  }
+ 

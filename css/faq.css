@@ -1,0 +1,133 @@
+
+:root {
+    --primary-color: rgb(185, 183, 183);
+    --secondary-color: #df9739;
+    --text-color: rgb(141, 136, 136);
+    --black-color: rgb(67, 62, 62);
+    --green-color-:rgb(19, 59, 19);
+    --light-green: rgb(87, 191, 87);
+}
+
+.questions-container{
+    max-width: 800px;
+    margin-top: 100px;
+}
+.question{
+    margin-bottom: 25px; 
+}
+.question button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    color: var(--black-color);
+    background-color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.question p{
+    font-size: 22px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+.d-arrow{
+    transition: transform 0.5s ease-in ;
+    color: var(--black-color);
+    font-size: 15px;
+}
+
+/*add this class when click*/
+.question p.show{
+    max-height: 200px; 
+    opacity: 1;
+    padding:0px 15px 30px 15px;
+}
+.question button .d-arrow.rotate{
+    transform: rotate(180deg);
+}
+.popular-plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popular-plan h1 {
+    font-weight: 900;
+}
+
+.view-more {
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 1px solid var(--green-color-);
+    transition: all 1s ease;
+  }
+  .view-more a {
+    color: var(--black-color);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .view-more a i {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  .view-more:hover {
+    background-color: var(--green-color-);
+  }
+  .view-more:hover a {
+    color: #fff;
+  }
+.tab-box .tab-btn {
+    cursor: pointer;
+    margin-bottom: 40px;   
+}
+.tab-box .tab-btn h1 {
+    font-weight: 900;
+    font-size: 50px;
+}
+.tab-box .tab-btn h2 {
+    font-weight: 900;
+}
+.tab-box .tab-btn.active h1 {
+    color: var(--green-color-);
+}
+.tab-btn hr {
+    border: none;
+    border-bottom: 2px solid gray;
+    margin-top: 25px;
+}
+.content-box {
+    margin-left: 15px;
+}
+.content img {
+    border-radius: 20px;
+    width: 100%;
+    height: 520px;
+}
+
+.content-box .content {
+    display: none;
+    animation: bounceOut .5s ease;
+}
+@keyframes bounceOut {
+    form{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.content-box .content.active {
+    display: block;
+}
+
+

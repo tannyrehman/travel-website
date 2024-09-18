@@ -1,0 +1,60 @@
+.light-green {
+    color: rgb(36, 95, 36);
+}
+.black-color {
+    color: black;
+}
+.text-color {
+    color: rgb(141, 136, 136);
+}
+.green-color {
+    color: rgb(19, 59, 19);
+}
+/* Font size */
+.font-14 {
+    font-size: 14px;
+}
+.font-18 {
+    font-size: 18px;
+}
+.font-20 {
+    font-size: 20px;
+}
+.font-22 {
+    font-size: 22px;
+}
+.font-40 {
+    font-size: 40px;
+}
+.font-30 {
+    font-size: 30px;
+}
+.font-45 {
+    font-size: 45px;
+}
+.font-50 {
+    font-size: 50px;
+}
+/* Font Weight */ */
+.fw-900 {
+    font-weight: 900;
+}
+/* Margin */
+.mt-100 {
+    margin-top: 100px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.ml-100 {
+    margin-left: 100px;
+}
+.ml-30 {
+    margin-left: 30px;
+}
+.ml-50 {
+    margin-left: 50px;
+}
+.ml-70 {
+    margin-left: 50px;
+}

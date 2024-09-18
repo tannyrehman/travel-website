@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+
+      <!-- Bootstrap Link -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+
+      <!-- Owl Carousel Link -->
+      <link rel="stylesheet" href="css/owl.carousel.css">
+      <link rel="stylesheet" href="css/owl.theme.default.css">
+  
+      <!-- Slick Carousel -->
+      <link rel="stylesheet" href="css/slick.css">
+      <link rel="stylesheet" href="css/animate.css">
+  
+      <!-- CSS Link -->
+      <link rel="stylesheet" href="css/all.css">
+      <link rel="stylesheet" href="css/utility.css">
+      <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="navber d-flex align-items-center justify-content-between">
+        <div class="nav-logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <ul class="menu-bar">
+            <li><a href="">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="">Services<i class="fa-solid fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="trip.html">Trip</a></li>
+                  <li><a href="trip-details.html">Trip Details</a></li>
+                </ul>
+            </div>
+        </li>
+            <li><a href="trip.html">Projects</a></li>
+            <li><a href="">Blog<i class="fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="blog.html">Blog Sideber</a></li>
+                      <li><a href="blog-details.html">Blog Details</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">Page<i class="fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="faq.html">FAQ</a></li>
+                      <li><a href="booking-form.html">Book a Form</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="navber-right d-flex align-items-center gap-5">
+            <div class="d-flex align-items-center gap-3">
+                <i class="fa-regular fa-comments font-45"></i>
+
+                <div class="nav-icon">
+                    <p class="font-18">Need Help?</p>
+                    <a href="">(307) 555-0133</a>
+                </div>
+            </div>
+
+           <div class="book-now-btn">
+                <a href="">Book Now</a>
+           </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+     <section class="hero-section">
+        <div class="hero-heading">
+            <h1>Your gateway to amazing <span>adventure</span> experiences</h1>
+            <p>A travel agency is a private retailer or public service that provides travel and tourism-related services to the general public</p>
+        </div>
+
+        <div class="hero-bottom">
+            <div class="d-flex align-items-center gap-3">
+                <!-- 1st part -->
+                <div class="hero-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                      </svg>
+                </div>
+                <div class="hero-content">
+                    <p>Location</p>
+                    <select class="" aria-label="Default select example">
+                        <option selected>New york City</option>
+                        <option value="1">Vanis City</option>
+                        <option value="2">Melbourn City</option>
+                      </select>
+                </div>
+            </div>
+            <!-- 2nd part -->
+            <div class="d-flex align-items-center gap-3">
+                <div class="hero-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                        <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                </div>
+                <div class="hero-content">
+                    <p>Time Period</p>
+                    <h6>01/01/2024 - 01/15/2030</h6>
+                </div>
+            </div>
+            <!-- 3rd part -->
+            <div class="d-flex align-items-center gap-3">
+                <div class="hero-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                      </svg>
+                </div>
+                <div class="hero-content">
+                    <p>Tour Type</p>
+                    <select class="" aria-label="Default select example">
+                        <option selected>Family Tour</option>
+                        <option value="1">Office Tour</option>
+                        <option value="2">Couple Tour</option>
+                      </select>
+                </div>
+            </div>
+            <div class="search-btn">
+                <a href="">Search plan</a>
+            </div>
+        </div>
+
+     </section>
+
+     <!-- Popular Trips Section -->
+
+     <section class="popular-trip">
+        <div class="container">
+            <div class="trip-top">
+                <div>
+                    <h1>Find Popular Trips</h1>
+                    <p>Whether you’re looking for places for a vacation. We are here to</p>
+                </div>
+                <div class="view-more">
+                    <a href="">View More</a>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <!-- 1st card -->
+                <div class="col-md-4">
+                    <div class="trip-card">
+                        <img src="images/trip-1.jpg" alt="">
+                        <div class="trip-content">
+                            <div class="trip-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Paris, France</span>
+                            </div>
+                            <div class="trip-title">
+                                <a href="">Eiffel Tower</a>
+                            </div>
+                            <div class="trip-star">
+                                <a href=""><i class="fa-solid fa-star"></i></a>
+                                <a href=""><i class="fa-solid fa-star"></i></a>
+                                <a href=""><i class="fa-solid fa-star"></i></a>
+                                <a href=""><i class="fa-solid fa-star"></i></a>
+                                <a href=""><i class="fa-solid fa-star"></i></a>
+                                <span>4.8 (500+)</span>
+                            </div>
+                            <div class="trip-time">
+                                <i class="fa-regular fa-clock"></i>
+                                <p> Time period:<span>4 days</span></p>
+                            </div>
+
+                            <div class="trip-bottom">
+                                <a href="">See Details <i class="fa-solid fa-arrow-right"></i></a>
+                                <p>From <span>$5,200</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd card -->
+                <div class="col-md-4">
+                    <div class="trip-card">
+                        <img src="images/trip-2.jpg" alt="">
+                        <div class="trip-content">
+                            <div class="trip-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>New York City, USA</span>
+                            </div>
+                            <div class="trip-title">
+                                <a href="">Statue of Liberty</a>
+                            </div>
+                            <div class="trip-star">
+                                <a href=""><i class="fa-solid fa-star"></i></a>
+                                <a href=""><i class="fa-solid fa-star"></i></a>
+                                <a href=""><i class="fa-solid fa-star"></i></a>
+                                <a href=""><i class="fa-solid fa-star"></i></a>
+                                <a href=""><i class="fa-solid fa-star"></i></a>
+                                <span>4.8 (500+)</span>
+                            </div>
+                            <div class="trip-time">
+                                <i class="fa-regular fa-clock"></i>
+                                <p> Time period:<span>4 days</span></p>
+                            </div>
+
+                            <div class="trip-bottom">
+                                <a href="">See Details <i class="fa-solid fa-arrow-right"></i></a>
+                                <p>From <span>$5,200</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd card -->
+                <div class="col-md-4">
+                    <div class="trip-card">
+                        <img src="images/trip-3.jpg" alt="">
+                        <div class="trip-content">
+                            <div class="trip-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Agra, India</span>
+                            </div>
+                            <div class="trip-title">
+                                <a href="">Taj Mahal</a>
+                            </div>
+                            <div class="trip-star">
+                                <a href=""><i class="fa-solid fa-star"></i></a>
+                                <a href=""><i class="fa-solid fa-star"></i></a>
+                                <a href=""><i class="fa-solid fa-star"></i></a>
+                                <a href=""><i class="fa-solid fa-star"></i></a>
+                                <a href=""><i class="fa-solid fa-star"></i></a>
+                                <span>4.8 (500+)</span>
+                            </div>
+                            <div class="trip-time">
+                                <i class="fa-regular fa-clock"></i>
+                                <p> Time period:<span>4 days</span></p>
+                            </div>
+
+                            <div class="trip-bottom">
+                                <a href="">See Details <i class="fa-solid fa-arrow-right"></i></a>
+                                <p>From <span>$5,200</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="first-trip">
+                <h2>Get up to 40% off on your first trip</h2>
+                <div class="book-now-btn">
+                    <a href="">Book Now<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- About Section -->
+      <section class="about-us">
+        <div class="container">
+            <div class="row">
+                <!-- 1st coloum -->
+                <div class="col-md-6">
+                    <div class="about-left mt-5">
+                        <h4 class="green-color">Why Choose Us</h4>
+                        <h1>Your gateway to amazing experiences and memories</h1>
+                        <p>We have been operating for over a decade, providing top-notch services to our clients and building a strong track record</p>
+                        <div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <span>Visa Services</span>
+                        </div>
+                        <p class="about-txt">Et purus duis sollicitudin dignissim habitant. Egestas <br> nulla quis venenatis cras sed eu massa</p>
+                        
+                        <a href="">
+                            <button class="read-more-btn">Read more <i class="fa-solid fa-arrow-right"></i></button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2nd coloum -->
+                <div class="col-md-6 ">
+                    <div class="about-right d-flex align-items-center gap-3">
+                       <div>
+                        <img class="img-one" src="images/choose-1.jpg" alt="">
+                       </div>
+                       <div>
+                        <img src="images/choose-2.jpg" alt="">
+                        <div class="about-client">
+                            <h1 class="font-30 fw-900"><span class="counter black-color fw-900 font-40">2000</span>+</h1>
+                            <p class="black-color font-22">Happy Client</p>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Pricing Plan section -->
+       <section class="pricing-section">
+            <div class="pricing-top text-center">
+                <h4 class="green-color">Pricing Plan</h4>
+                <h1>Traveling opens up a world of new experiences cultures</h1>
+            </div>
+
+            <div class="container mt-5">
+                <div class="row">
+                    <!-- 1st coloum -->
+                    <div class="col-md-4 ">
+                        <div class="pricing-card bg-white ">
+                            <div class="card-img d-flex align-items-center justify-content-between">
+                                <img src="images/price-1.jpg" alt="">
+                                <img src="images/price-2.jpg" alt="">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <h2 class="fw-900">New York</h2>
+                                <h2 class="fw-900">$200</h2>
+                            </div>
+                            <hr>
+                            <p class="font-18 text-color">We have been operating for over a decade to our providing top notch operating</p>
+
+                            <div class="mt-4">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h5>Mistakes To Avoid</h5>
+                                </div>
+                                <div class="d-flex align-items-center gap-3 mt-4">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h5>Your Startup</h5>
+                                </div>
+                                <div class="d-flex align-items-center gap-3 mt-4">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h5>Knew About Fonts</h5>
+                                </div>
+                                <div class="d-flex align-items-center gap-3 mt-4">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h5>Winning Metric for Your Startup</h5>
+                                </div>
+                            </div>
+
+                            <div class="card-btn mt-4 text-center">
+                                <a href="" class="black-color font-20">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2nd coloum -->
+                    <div class="col-md-4 ">
+                        <div class="pricing-card bg-white ">
+                            <div class="card-img d-flex align-items-center justify-content-between">
+                                <img src="images/price-3.jpg" alt="">
+                                <img src="images/price-4.jpg" alt="">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <h2 class="fw-900">Dubai</h2>
+                                <h2 class="fw-900">$290</h2>
+                            </div>
+                            <hr>
+                            <p class="font-18 text-color">We have been operating for over a decade to our providing top notch operating</p>
+
+                            <div class="mt-4">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h5>Mistakes To Avoid</h5>
+                                </div>
+                                <div class="d-flex align-items-center gap-3 mt-4">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h5>Your Startup</h5>
+                                </div>
+                                <div class="d-flex align-items-center gap-3 mt-4">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h5>Knew About Fonts</h5>
+                                </div>
+                                <div class="d-flex align-items-center gap-3 mt-4">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h5>Winning Metric for Your Startup</h5>
+                                </div>
+                            </div>
+
+                            <div class="card-btn mt-4 text-center">
+                                <a href="" class="black-color font-20">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3rd coloum -->
+                    <div class="col-md-4 ">
+                        <div class="pricing-card bg-white ">
+                            <div class="card-img d-flex align-items-center justify-content-between">
+                                <img src="images/price-5.jpg" alt="">
+                                <img src="images/price-6.jpg" alt="">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <h2 class="fw-900">Duha</h2>
+                                <h2 class="fw-900">$299</h2>
+                            </div>
+                            <hr>
+                            <p class="font-18 text-color">We have been operating for over a decade to our providing top notch operating</p>
+
+                            <div class="mt-4">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h5>Mistakes To Avoid</h5>
+                                </div>
+                                <div class="d-flex align-items-center gap-3 mt-4">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h5>Your Startup</h5>
+                                </div>
+                                <div class="d-flex align-items-center gap-3 mt-4">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h5>Knew About Fonts</h5>
+                                </div>
+                                <div class="d-flex align-items-center gap-3 mt-4">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h5>Winning Metric for Your Startup</h5>
+                                </div>
+                            </div>
+
+                            <div class="card-btn mt-4 text-center">
+                                <a href="" class="black-color font-20">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <!-- Video Section -->
+        <section class="video-section">
+            <div class="container">
+                <div class="row">
+                    <!-- 1st coloum -->
+                    <div class="col-md-6">
+                        <div class="">
+                            <h1 class="fw-900 black-color">Your gateway to amazing experiences and memories</h1>
+                            <p class="font-22 text-color mt-3">We have been operating for over a decade, providing top-notch services to our clients and building a strong track record</p>
+
+                            <a href="">
+                                <button class="view-more-btn">Book Now <i class="fa-solid fa-arrow-right"></i></button>
+                            </a>
+                         </div>
+                    </div>
+                    <!-- 2nd coloum -->
+                    <div class="col-md-6">
+                       <div class="ml-100 d-flex align-items-center gap-5">
+                            <div class="video-icon">  
+                                <i class="fa-solid fa-house-flood-water-circle-arrow-right"></i>
+                                <h3>Food Tastings</h3>
+                            </div>
+                            <div class="video-icon">  
+                                <i class="fa-regular fa-map"></i>
+                                <h3>Visa Assistance</h3>
+                            </div>
+                       </div>
+                       <div class="ml-100 d-flex align-items-center gap-5">
+                            <div class="video-icon">  
+                                <i class="fa-solid fa-anchor-circle-exclamation"></i>
+                                <h3>Historical Walks</h3>
+                            </div>
+                            <div class="video-icon">  
+                                <i class="fa-solid fa-mountain-city"></i>
+                                <h3>Beach Excursions</h3>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- video Area -->
+        <div class="container">
+           <div class="video-area">
+                <div class="feature-img">
+                    <img src="media/video-1.jpg" alt="">
+                    <img src="media/play-button.png" alt="" class="play-btn" onclick="playVideo('media/vid1.mp4')">
+                </div>
+
+
+                <div class="video-player" id="videoPlayer">
+                    <video width="100%" controls autoplay id="myVideo">
+                        <source src="media/vid1.mp4" type="video/mp4">
+                    </video>
+                    <img src="media/close.png" class="close-btn" alt="" onclick="stopVideo()">
+                </div>
+           </div>
+        </div>
+
+       <!-- Best Place Section -->
+        <section class="place-section">
+            <div class="text-center">
+                <h1 class="fw-900 black-color">Find best places around the world</h1>
+                <p class="text-color font-22 w-50 m-auto mt-3">Whether you’re looking for places for a vacation. We are here to Guide you <br>
+                    about the details you need to check in and ease your trips in advance</p>
+            </div>
+
+            <div class="container mt-5">
+                <div class="row">
+                    <!-- 1st card -->
+                    <div class="col-md-2">
+                        <div class="best-card">
+                            <img src="images/place-1.jpg" alt="">
+                            <h3>City Tour</h3>
+                            <p class="text-color font-22">86 Destinations</p>
+                        </div>
+                    </div>
+                    <!-- 2nd card -->
+                    <div class="col-md-2">
+                        <div class="best-card">
+                            <img src="images/place-2.jpg" alt="">
+                            <h3>Hill Tour</h3>
+                            <p class="text-color font-22">86 Destinations</p>
+                        </div>
+                    </div>
+                    <!-- 3rd card -->
+                    <div class="col-md-2">
+                        <div class="best-card">
+                            <img src="images/place-3.jpg" alt="">
+                            <h3>Food Tour</h3>
+                            <p class="text-color font-22">86 Destinations</p>
+                        </div>
+                    </div>
+                    <!-- 4th card -->
+                    <div class="col-md-2">
+                        <div class="best-card">
+                            <img src="images/place-4.jpg" alt="">
+                            <h3>Beach Tour</h3>
+                            <p class="text-color font-22">86 Destinations</p>
+                        </div>
+                    </div>
+                    <!-- 5th card -->
+                    <div class="col-md-2">
+                        <div class="best-card">
+                            <img src="images/place-5.jpg" alt="">
+                            <h3>Bus Tour</h3>
+                            <p class="text-color font-22">86 Destinations</p>
+                        </div>
+                    </div>
+                    <!-- 6th card -->
+                    <div class="col-md-2">
+                        <div class="best-card">
+                            <img src="images/place-6.jpg" alt="">
+                            <h3>Day Cruises</h3>
+                            <p class="text-color font-22">86 Destinations</p>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="best-place-middle">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="">
+                            <h1 class="fw-900 black-color">Journey Beyond Boundaries the Passport to Wanderlust</h1>
+                            <p class="font-22 text-color mt-3">We have been operating for over a decade, providing top-notch services to our clients and building a strong track record</p>
+
+                            <a href="">
+                                <button class="view-more-btn">Read more <i class="fa-solid fa-arrow-right"></i></button>
+                            </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <img src="images/funfact-1.jpg" alt="">
+                    </div>
+                </div>
+               </div>
+
+               <div class="best-place-bottom">
+                    <div class="row">
+                        <!-- 1st card -->
+                        <div class="col-md-3">
+                            <div class="place-card">
+                                <div class="place-icon">
+                                    <i class="fa-regular fa-lightbulb"></i>
+                                </div>
+                                <div>
+                                    <h1 class="fw-900 black-color"><span class="counter">20</span>k+</h1>
+                                    <p class="font-20 text-color mt-3">Explorer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2nd card -->
+                        <div class="col-md-3">
+                            <div class="place-card">
+                                <div class="place-icon">
+                                    <i class="fa-regular fa-lightbulb"></i>
+                                </div>
+                                <div>
+                                    <h1 class="fw-900 black-color"><span class="counter">20</span>+</h1>
+                                    <p class="font-20 text-color mt-3">Winning award</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3rd card -->
+                        <div class="col-md-3">
+                            <div class="place-card">
+                                <div class="place-icon">
+                                    <i class="fa-regular fa-lightbulb"></i>
+                                </div>
+                                <div>
+                                    <h1 class="fw-900 black-color"><span class="counter">10</span>k+</h1>
+                                    <p class="font-20 text-color mt-3">Complete project</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4th card -->
+                        <div class="col-md-3">
+                            <div class="place-card">
+                                <div class="place-icon">
+                                    <i class="fa-regular fa-lightbulb"></i>
+                                </div>
+                                <div>
+                                    <h1 class="fw-900 black-color"><span class="counter">900</span>+</h1>
+                                    <p class="font-20 text-color mt-3">Client review</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </section>
+
+        <!-- Destination Section -->
+       <section class="desti-section">
+            <div class="text-center">
+                <h1 class="fw-900 black-color">Bringing Destinations to Life</h1>
+                <p class="text-color font-22 w-50 m-auto mt-3">Whether you’re looking for places for a vacation. We are here to</p>
+            </div>
+
+            <div class="container mt-5">
+                <div class="row">
+                    <!-- 1st coloum -->
+                    <div class="col-md-3">
+                        <div class="desti-card">
+                            <img src="images/desti-1.jpg" alt="">
+                            <h3 class="black-color fw-900 mt-3">Louvre Museum</h3>
+                            <p class="text-color font-22 mt-3">Paris, France</p>
+                        </div>
+                    </div>
+                    <!-- 2nd coloum -->
+                    <div class="col-md-3">
+                        <div class="desti-card">
+                            <img src="images/desti-2.jpg" alt="">
+                            <h3 class="black-color fw-900 mt-3">Vatican City</h3>
+                            <p class="text-color font-22 mt-3">Rome, Italy</p>
+                        </div>
+                    </div>
+                    <!-- 3rd coloum -->
+                    <div class="col-md-3">
+                        <div class="desti-card">
+                            <img src="images/desti-3.jpg" alt="">
+                            <h3 class="black-color fw-900 mt-3">Times Square</h3>
+                            <p class="text-color font-22 mt-3">New York City, USA</p>
+                        </div>
+                    </div>
+                    <!-- 4th coloum -->
+                    <div class="col-md-3">
+                        <div class="desti-card">
+                            <img src="images/desti-4.jpg" alt="">
+                            <h3 class="black-color fw-900 mt-3">Tokyo Tower</h3>
+                            <p class="text-color font-22 mt-3">Tokyo, Japan</p>
+                        </div>
+                    </div>
+                    <!-- 5th coloum -->
+                    <div class="col-md-3">
+                        <div class="desti-card">
+                            <img src="images/desti-5.jpg" alt="">
+                            <h3 class="black-color fw-900 mt-3">Harbour Bridge</h3>
+                            <p class="text-color font-22 mt-3">Sydney, Australia</p>
+                        </div>
+                    </div>
+                    <!-- 6th coloum -->
+                    <div class="col-md-3">
+                        <div class="desti-card">
+                            <img src="images/desti-6.jpg" alt="">
+                            <h3 class="black-color fw-900 mt-3">Buddhist temples</h3>
+                            <p class="text-color font-22 mt-3">Kyoto, Japan</p>
+                        </div>
+                    </div>
+                    <!-- 7th coloum -->
+                    <div class="col-md-3">
+                        <div class="desti-card">
+                            <img src="images/desti-7.jpg" alt="">
+                            <h3 class="black-color fw-900 mt-3">Buckingham Palace</h3>
+                            <p class="text-color font-22 mt-3">London, England</p>
+                        </div>
+                    </div>
+                    <!-- 8th coloum -->
+                    <div class="col-md-3">
+                        <div class="desti-card">
+                            <img src="images/desti-8.jpg" alt="">
+                            <h3 class="black-color fw-900 mt-3">the Grand Palace</h3>
+                            <p class="text-color font-22 mt-3">Bangkok, Thailand</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <!-- Slider Section -->
+        <section class="slider-section">
+            <div class="container">
+                <div class="slider-2">
+                    <div class="slider-img">
+                        <img src="images/brand-1.png" alt="">
+                    </div>
+                    <div class="slider-img">
+                        <img src="images/brand-2.png" alt="">
+                    </div>
+                    <div class="slider-img">
+                        <img src="images/brand-4.png" alt="">
+                    </div>
+                    <div class="slider-img">
+                        <img src="images/brand-3.png" alt="">
+                    </div>
+                    <div class="slider-img">
+                        <img src="images/brand-5.png" alt="">
+                    </div>   
+                    <div class="slider-img">
+                        <img src="images/brand-1.png" alt="">
+                    </div>   
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog-section">
+            <div class="container">
+                <div class="blog-top">
+                    <div>
+                        <h1 class="fw-900 black-color">Our Latest travel articls</h1>
+                        <p class="text-color font-22 mt-3">We have been operating for over a decade, providing top-notch <br> services to our clients and building a strong track record</p>
+                    </div>
+                    <div class="view-more mt-5">
+                        <a href="">View More</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                  <!-- 1st column -->
+                  <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="images/blog-1.jpg" alt="">
+                        <div class="blog-content">
+                            <div class="d-flex align-items-center gap-5 text-color">
+                                <div>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <span>October 19, 2022</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>By admin</span>
+                                </div>
+                            </div>
+                            <h3>Journey to your heart's content Where travel</h3>
+
+                            <a href="">
+                                <button class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></button>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                  <!-- 2nd column -->
+                  <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="images/blog-2.jpg" alt="">
+                        <div class="blog-content">
+                            <div class="d-flex align-items-center gap-5 text-color">
+                                <div>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <span>October 19, 2022</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>By admin</span>
+                                </div>
+                            </div>
+                            <h3>Journey to your heart's content Where travel</h3>
+
+                            <a href="">
+                                <button class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></button>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                  <!-- 3rd column -->
+                  <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="images/blog-3.jpg" alt="">
+                        <div class="blog-content">
+                            <div class="d-flex align-items-center gap-5 text-color">
+                                <div>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <span>October 19, 2022</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>By admin</span>
+                                </div>
+                            </div>
+                            <h3>Journey to your heart's content Where travel</h3>
+
+                            <a href="">
+                                <button class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></button>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+         <div class="footer-top">
+            <div class="d-flex align-items-center justify-content-center gap-5">
+                    <div>
+                        <img src="images/subscribe-1.png" alt="">
+                    </div>
+                    <div>
+                        <h1>Subscribe to get tour <br> offers monthly</h1>
+                        <p class="text-white font-22 mt-4">A travel agency is a private retailer or public service that provides <br> travel and tourism-related services to the general public</p>
+
+                        <div class="mt-4 search-bar">
+                            <input type="text" placeholder="Your email">
+                            <button type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <footer class="footer-section text-white">
+            <div class="container">
+                <div class="row">
+                    <!-- 1st coloum -->
+                    <div class="col-md-3">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="#"><img src="images/logo-white.png" alt=""></a>
+                            </div>
+                            <div class="footer-txt">
+                                <p>We have been operating for over a decade, providing top-notch services to our</p>
+                            </div>
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2nd coloum -->
+                    <div class="col-md-3">
+                        <div class="footer-widget">
+                            <div class="footer-title">
+                                <h5>Gallery</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="footer-img">
+                                        <img src="images/gallery-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="footer-img">
+                                        <img src="images/gallery-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="footer-img">
+                                        <img src="images/gallery-3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="footer-img">
+                                        <img src="images/gallery-4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="footer-img">
+                                        <img src="images/gallery-5.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="footer-img">
+                                        <img src="images/gallery-6.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3rd coloum -->
+                    <div class="col-md-3">
+                        <div class="footer-widget ml-100">
+                            <div class="footer-title">
+                                <h5>Useful Links</h5>
+                            </div>
+                            <div class="footer-nav">
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">What We Do</a></li>
+                                    <li><a href="#">Our Team</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4th coloum -->
+                    <div class="col-md-3">
+                        <div class="footer-widget ml-30">
+                            <div class="footer-title">
+                                <h5>More Service</h5>
+                            </div>
+                            <div class="footer-nav">
+                                <ul>
+                                    <li><a href="#">Adventurer Ace</a></li>
+                                    <li><a href="#">Expedition Expert</a></li>
+                                    <li><a href="#">Journey Jedi</a></li>
+                                    <li><a href="#">Wanderlust Warrior</a></li>
+                                    <li><a href="#">Global Trek</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-color font-14">© Travexia 2024 | All Rights Reserved</p>
+                        <div class="">
+                            <a href="">Trams & Condition</a>
+                            <a href="">Privacy Policy </a>
+                            <a href="">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    
+    
+
+     <!--JS Link-->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="js/jquery.counterup.min.js"></script>
+     <script src="js/jquery.waypoints.js"></script>
+     <script src="js/owl.carousel.js"></script>
+     <script src="js/filter.js"></script>
+     <script src="js/slick.js"></script>
+     <script src="js/wow.js"></script>
+     <script src="js/script.js"></script>
+</body>
+</html>

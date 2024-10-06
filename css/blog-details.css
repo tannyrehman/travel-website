@@ -240,4 +240,9 @@
     background: #fff;
     border-radius: 10px;
     cursor: pointer;
+    transition: all .5s ease;
+}
+.category-tag a:hover {
+    background: var(--green-color-);
+    color: #fff;
 }

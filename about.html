@@ -54,7 +54,7 @@
                 <div class="dropdown-menu">
                     <ul>
                     <li><a href="trip.html">Trip</a></li>
-                    <li><a href="#">Trip Details</a></li>
+                    <li><a href="trip-details.html">Trip Details</a></li>
                     </ul>
                 </div>
             </li>
@@ -470,6 +470,23 @@
             </div>
         </div>
     </footer>
+
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+
+
+      <script>
+         const toTop = document.querySelector(".to-top");
+
+        window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+        });
+      </script>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.js"></script>

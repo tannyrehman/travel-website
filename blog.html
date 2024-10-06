@@ -14,7 +14,7 @@
      <link rel="stylesheet" href="css/common.css">
      <link rel="stylesheet" href="css/blog.css">
 </head>
-<body>
+<>
 
      <!-- header Top -->
 
@@ -44,18 +44,18 @@
 
     </section>
     <!-- Header Section -->
-    <header class="navber d-flex align-items-center justify-content-between bg-white">
+    <header class="navber d-flex align-items-center justify-content-between bg-white sticky-top">
             <div class="nav-logo">
                 <img src="images/logo.png" alt="">
             </div>
             <ul class="menu-bar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="">Services<i class="fa-solid fa-chevron-down"></i></a>
                 <div class="dropdown-menu">
                     <ul>
-                    <li><a href="#">Trip</a></li>
-                    <li><a href="#">Trip Details</a></li>
+                    <li><a href="trip.html">Trip</a></li>
+                    <li><a href="trip-details.html">Trip Details</a></li>
                     </ul>
                 </div>
             </li>
@@ -63,7 +63,7 @@
                 <li><a href="">Blog<i class="fa-solid fa-chevron-down"></i></a>
                     <div class="dropdown-menu">
                         <ul>
-                        <li><a href="#">Blog Sideber</a></li>
+                        <li><a href="blog.html">Blog Sideber</a></li>
                         <li><a href="blog-details.html">Blog Details</a></li>
                         </ul>
                     </div>
@@ -451,6 +451,23 @@
             </div>
         </div>
     </footer>
+
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+
+      <script>
+          const toTop = document.querySelector(".to-top");
+
+        window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+        });
+      </script>
+
     
 
 

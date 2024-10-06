@@ -49,12 +49,12 @@
             </div>
             <ul class="menu-bar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="">Services<i class="fa-solid fa-chevron-down"></i></a>
                 <div class="dropdown-menu">
                     <ul>
                     <li><a href="#">Trip</a></li>
-                    <li><a href="#">Trip Details</a></li>
+                    <li><a href="trip-details.html">Trip Details</a></li>
                     </ul>
                 </div>
             </li>
@@ -418,5 +418,24 @@
             </div>
         </div>
     </footer>
+
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+
+      <script>
+          const toTop = document.querySelector(".to-top");
+
+        window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+        });
+      </script>
+</body>
+
+    
 </body>
 </html>

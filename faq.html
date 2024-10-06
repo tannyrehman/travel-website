@@ -43,7 +43,7 @@
     
     </section>
     <!-- Header Section -->
-    <header class="navber d-flex align-items-center justify-content-between bg-white">
+    <header class="navber d-flex align-items-center justify-content-between bg-white sticky-top">
             <div class="nav-logo">
                 <img src="images/logo.png" alt="">
             </div>
@@ -361,6 +361,23 @@
             </div>
         </div>
     </footer>
+
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+
+      <script>
+          const toTop = document.querySelector(".to-top");
+
+        window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+        });
+      </script>
+
 
       <!--JS Link-->
       <script src="js/jquery.js"></script>
